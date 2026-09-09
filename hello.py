@@ -1,0 +1,6 @@
+print("Hello Python")
+print("Hello Everyone")
+print("My Name is" , "계산기")
+a=input("첫 번째 수: ")
+b=input("두 번째 수: ")
+print("두 수의 곱은: ", int(a)*int(b))
