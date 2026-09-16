@@ -6,6 +6,7 @@ while True:
 
     print("숫자 맞추기 게임을 시작 할 것이다.")
     print("맞추지 못하면 죽음 뿐.")
+    print("지금부터 게임을 시작하지")
 
     while True:
         try:
