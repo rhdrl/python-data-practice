@@ -15,10 +15,28 @@ temp[0] = 20.0
 print(temp)
 
 year = 2026
-city = "인천"
+city = "Incheon"
 value = [10, 20, 30, 40]
 
 print(type(year))
 print(type(city))
 print(type(value))
 print(len(value))
+
+weather = { "city": "Incheon", "temp":27.5, }
+
+print(type(weather))
+print(len(weather))
+
+print(weather.keys())
+for key in weather.keys():
+    print(key)
+
+print(weather.values())
+for value in weather.values():
+    print(value)
+
+print(weather.items())
+for key, value in weather.items():
+    print(key, value)
+
