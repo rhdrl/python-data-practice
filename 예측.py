@@ -49,6 +49,14 @@ def predict_2026():
     print(f"2025년 12월 매출: {sale_2025[-1]}만원")
     print(f"2026 예상 매출: {prediction:.2f}만원")
 
+def predict_2026_monthly():
+    average_change = calculate_average_change()
+    print("\n[2026년 월별 예상 매출]")
+    for i in range(len(sale_2025)):
+        prediction = sale_2025[i] + average_change
+        print(f"{months[i]}: {prediction:.2f}만원")
+
+        
 #---------메뉴 프로그램----------
 while True:
     print("\n============================")
@@ -61,6 +69,7 @@ while True:
     print("5. 증가/감소 확인")
     print("6. 평균 변화량")
     print("7. 2026년 예상 매출")
+    print("8. 2026년 예상 매출 (월별)")
     print("0. 종료")
 
     try:
@@ -80,6 +89,8 @@ while True:
             print(f"\n평균 변화량: {average_change:.2f}만원")
         elif menu == 7:
             predict_2026()
+        elif menu == 8:
+            predict_2026_monthly()
         elif menu == 0:
             print("프로그램을 종료합니다.")
             break
